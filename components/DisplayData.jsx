@@ -12,7 +12,7 @@ const DisplayData = (props)=>{
           {  props.feed.map((a,i)=>{
                 return (
                     <ListItem disablePadding>
-              <ListItemText primary={`${i+1}. ${a}`} />
+              <ListItemText key={i} primary={`${i+1}. ${a}`} />
             </ListItem>
                 )
             })
